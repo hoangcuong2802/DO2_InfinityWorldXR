@@ -1,7 +1,6 @@
-# AR Foundation Samples
-Example projects that use *AR Foundation* and demonstrate its functionality with sample assets and components.
+# AR Infinity World
+This project demonstrates a demo (POC) of Infinity World XR with AR Foundation Image Tracking & GPS Location-based AR.
 
-Compatible with Unity 2018.4.
 
 ## Instructions for installing AR Foundation
 
