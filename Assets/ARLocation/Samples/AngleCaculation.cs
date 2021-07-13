@@ -19,10 +19,11 @@ public class AngleCaculation : MonoBehaviour
     public Transform locationA;
     public Transform locationB;
     public Transform target;
+    bool isRotate = false;
     // Start is called before the first frame update
     void Start()
     {
-
+        isRotate = true;
     }
     // Update is called once per frame
     void Update()
@@ -59,6 +60,10 @@ public class AngleCaculation : MonoBehaviour
             //AR and GPS difference in angle degrees
             radiosValue = (float)(angle - angleposition) + 90;
             Debug.Log("Angle difference bwt AR & GPS: " + radiosValue);
-            target.transform.Rotate(0f, radiosValue, 0f);
-     }
+            if(isRotate)
+                {
+                    target.transform.Rotate(0f, radiosValue, 0f);
+                    isRotate = false;
+                }
+    }
 }
